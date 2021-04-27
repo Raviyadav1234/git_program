@@ -1,4 +1,1 @@
-hi this is first committed by Ravi Yadav
-this second committ by Ravi
-this is third committ by Ravi Yadav
-
+this is my first commit
