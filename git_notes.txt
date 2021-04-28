@@ -1,0 +1,609 @@
+DevOps:>
+=========
+ it is not a technology but a culture in it for sofware modelling and production 
+ according to SDLC.
+===================================================================
+
+
+SDLC:>
+=========
+Software Devlopment Life Cycle.
+in SDLC there were several model proposed by diffrent Engineer IT Experts
+1. Waterfall Model:>
+-------------------
+      Requirement Gathering
+     -------
+	       | Requirement Analysis or Study
+		   ------
+		        | Design
+				-------
+				      | Testing
+					  ------- Maintaince
+					         |----- Delivery
+							       |
+Each phase must be complete with 100% accuracy why because undo is not possible.
+
+
+
+2.Prototype Model:>
+-----------------
+We prepare a prototype
+Requirment Full an Final
+Disign full complete
+Time Line is Very good
+
+
+3.Spiral Model:>
+----------------
+@ each loop represent modularity
+and project is highly flexible work load distributed.
+
+
+4.Evaluation Model:>
+-------------------
+spiral+water fall=mashup
+
+
+5.Scrum Model (AGILE MODEL):>
+--------------------------
+it follows WBS Architecture: work break down Structure
+Team Work:>
+1.coding team(collabs 5) 5copies 5branches(environment).
+designer:5
+coding:5
+testing:5
+
+2.operational team.
+sales:2.
+installation:2
+delivery:2
+client handling:2
+
+
+If you are working in a distrubuted system there should be some central server 
+where every developer can submit there project or code such type of machanism is
+version control mechanism. Small Small of Code Source or Module is called Scrum
+
+Tools Avaliable in Market is Called versin Control Softwares
+Example:SVN(Sub version)
+GIT:
+
+Such Type of Mechanis or Culture running In IT Company Is DevOps
+DevOps + Operational Team
+
+Working with Git Terminal
+#########################
+ls: list out all the files
+pwd: print working directry
+ls-lart:show hidden files list
+ctrl+: fontup
+ctrl-:font small
+Arrow Keys:command History
+clear:used to clear the screen
+
+
+Important command working with .git repo
+-----------------------------------------
+1.How to create or set up global signature
+git config --global user.name ""
+git config --global user.email ""
+
+2.Create or Intialise .git repo
+git init
+
+3.how to cross check
+ls -lart.
+
+4.how to create resource
+touch<filename.ext>
+Example:
+ touch index.html
+ touch about.html
+ touch contact.html
+ 
+ 5.how to create a folder?
+ mkdir <folder-name>
+ 6.how to track level of your project?
+ git status -s: for short description
+ git status: long description
+ 
+ 
+ 
+ 7.Difference B/W git status and git status -s.
+ git status -s:it shoud tracking activity of files
+ git status: Branch name
+             last commits
+             tracking Lavels of all files.
+
+
+
+8.how to add files to staging?
+single file:git add <filename>
+git add -A
+git add --all
+
+if you want to track complete current directory
+command = git add . 
+
+
+how to disabled tracking?
+remove the file from staging you need to clear cache
+git rm --cached <filename>
+note:Each tracking must be commited otherwise cached will conflict
+then you to force fully remove the file
+you can raise flag -f forcefully
+git rm --cached <filename> -f
+
+
+commit Story
+every file must be commited
+git commit -m "message any valid"
+
+give you entire log for the committed changes = git log
+commited files is created by unique id of 40  random character bits
+
+How to get Back last commited result?
+git checkout<filename>
+
+
+how to know current Branch?
+git branch.
+
+
+how to create new branch?
+git branch <branchname>.
+example: git branch ravi
+
+
+show that branch?
+git branch
+
+
+how to switch branch?
+git checkout branchname
+
+
+
+Terminology:
+1.git repo:Any Project having .git folder will called as git repo.
+2.master:It is main Branch of your project(Main Developer).
+3.
+
+
+
+-------------------------------------------------------------
+						DATE=11/01/2021
+
+Question. What is Difference B/W Git clone and Git init?
+Answer.Clone means making changes in existing project then we need to 
+clone it
+
+clone:public repo
+clone:private repo(ssh keys:rsa key ciper code)
+clone is performed to make changes like maintenance, deploying new functionality
+or testing.
+
+Git init: git init is when we want to start the project scratch.
+branch:master.
+
+How clone url looks?
+http://someclouds/downloads/myfiles.zip
+https://github/Ravi2017/mycustom-project/myfiles.git
+      git-url /Auther-Id/url_project/  .git repo
+
+
+Question. What is Git repo?
+Answer. Any Project having .git folder initialised becomes a repository.
+
+
+How to manage tracking of all?
+files other than few files
+git add --all
+git add -A
+git rm --cached <filename>
+
+Best was is: to .gitignore file.
+
+
+What is .gitignore file?
+it is special file which tracks untracked file and donot ad them to staging.
+touch .gitignore.
+
+note:git donot track any files registerd inside .gitignore file if you want
+.gitignore but gitignore will not be added in staying Area. then next time when
+you want to clone the project you want to able to know which files to working
+under tracking and which file to ignore.
+
+
+git labelling:
+--------------
+.git*
+.gitlock
+
+
+git diff command
+----------------
+used to find out the difference B/W last Committed Code with lasted modified code.
+git diff <filename>
+For example: git diff index.html
+
+
+how to checkout last Code from a file.
+git checkout<file name>
+git checkout index.html
+
+
+how to checkout lastcode from a deleted file.
+file name is missing
+checkout the branch
+git checkout <Branch-name>
+git check Master
+You will get the file name
+
+
+
+git status
+deleted:filename
+git checkout filename
+
+
+
+
+
+Question. what is difference B/W public repo And Private Repo?
+Answer. public repo:url it is globally accessible.
+        private repo:only can accessed by loginned user one having ssh key.
+
+
+How to auto add and commit to staging?
+---------------------------------------
+git commit -a -m "Any Message to the existing coe...."
+git status
+you will no status tree is clean.
+
+
+
+how to checkout full project.
+git checkout -f
+-f flag revert back all the changes from the project of cu branch
+
+
+
+Q.1 A empty folder cannot be tracked.
+Ans. Minimum one file must existing
+
+Q.2 Checkout can be performed at one Condition.
+in case of git init
+since there is no commit file checkout cannot be untill and unless initial commit.
+
+=================================================================================
+		                  
+						  
+					==================================
+						   DATE: 12/01/2021
+			        ==================================
+						   
+How to work with GitHub or Any Repository
+------------------------------------------ 
+there are millions of online server which allow vcs(VERSION CONTROL SYSTEM) Intregation
+vcs here refers to version control system which means you have multiple developers
+working under agile model or scrum model
+scrum or sprint model
+
+
+
+each(scrum) sprint is commited by different developer as a collab
+and each scrum is a part of a Branch.
+
+
+Git hub is popular online server mostly used for submitting or commits
+
+Is Github only the possible way?
+No we have bit-keeper(Git Older server Repeositry),bitbucket,aws,Git Lab
+
+
+GitHub Owened by Microsoft.
+
+you can create two types of repository.
+1.public:In public Any one Using Internet Can access.
+  clone:No Permission Required in pull
+  push:Requires Permission And Credentials
+  collab:Requires Permission And Credentials
+  forks:Requires Permission And Credentials
+  
+  2.private:You are the Owner with Single Access.
+  clone: In private required Permission of the  Owne for pull and such type of 
+  request is called as pull request.
+  push:Requires Permission And Credentials
+  collab:Requires Permission And Credentials
+  forks:Requires Permission And Credentials
+  
+  
+  How to create first repository?
+  -------------------------------
+  1.Login to Github Account
+  2.Access Code May Be Asked to login into gmail and Get the OTP send by GitHub.
+   [May OR May NOT be]
+  3. create Repository On The Right Hand side.
+      Before You Create A Repo You Should Have 
+	  Following Things Ready
+	  1.Ownership Type:Public Or private.
+	  2.Unique Url For Repo(repo-name)
+	  3.ReadMe File:It is local Documentation.
+	  4. .gitignore file: Which files Or Folder to commit or Not.
+	  5.(Optional) License
+After above process	- Create The Repository
+
+         Tag Or Description:Information about the project....
+		 Created the repository
+		 
+		 
+		 How to switch Branch
+		 git chechout <Branch name>
+		 Head->ravi
+		 Owenership is created master will never know that ravi branch has been
+		 created.
+		 
+		 
+		 How to push The code to server?
+		 1.add the remote url
+		 git remote add origin <url...>
+		 git remote add origin <repository url...>
+		 git remote add origin <https://github/Ravi2017/mycustom-project/myfiles...>
+		 
+		 
+		 How to confirm Origin?
+		 git remote -valid
+		 
+		 
+		 origin:https://github/Ravi2017/mycustom-project/myfiles(FETCH)
+		 origin:https://github/Ravi2017/mycustom-project/myfiles(PUSH)
+		 
+		 
+		 How to Push the code?
+		 git push <origin> <branch>
+		 git push https://github/Ravi2017/mycustom-project/master
+		 
+		 
+		 You have Any Other Branch?
+		 git push https://github/Ravi2017/mycustom-project/ravi
+		 git push <origin> Ravi
+		 
+		 
+		 Origin is variable name.
+		 git remote add url https://github.com/owner_id/repo-name/
+		 
+		 
+		 push in the url.
+		 git push url master
+		 Git ask for the credential and push the entire with the branch.
+		 
+		 
+		 
+		 how to clone the project?
+		 git clone <public-repo>
+		 git clone <private-repo> <ssh-key>
+		 
+		 
+		 
+		 How to setup a new branch and switch to It.
+		 git branch
+		 master existeds
+		 
+		 
+		 Now create the New Branch.
+		 git chechout -b <branch-name>
+		 
+		 $ Output: creating a new branch and switching.
+		 
+	
+                         DATE:7/04/2021
+                  ---------------------------
+
+
+				  
+Some Other git Command
+------------------
+1.[git mv <old file-name> <new file-name>]:
+--------------------------------------------
+										  This command is used for renamed any file.
+										  
+2.[git rm <file name>]:
+----------------------
+						This command is used for delete any file.
+						
+						
+3.[git rm --cached <file name>]:
+----------------------------- This command is used to untracked any file.
+
+
+4.[git add . OR git add --a  OR git add --all  OR git add -A]:
+------------------------------------------------------------
+															All these Command is used for same purpose.
+Basically these command are used for adding file on staging area.
+
+
+5.[git add <file-name>]:
+-----------------------
+                       this command is used to ad file on staging area for a single file.
+					   
+					   
+5. [git commit -a -m "any message"]:
+---------------------------------
+                                 this command is used for adding all file on staging area with commit
+excludind untracked file.
+
+
+6. [git log]:
+------------
+            this command is used for showing all commit history.
+			
+
+7. [git config user.name OR git config user.email[:
+-------------------------------------------------
+                                                 This command is used for find git's user name aor email.
+												 
+
+8. [git init]:
+--------------
+
+               This command is used for create a git repo.
+
+9. [touch <file-name>]:
+----------------------
+                       This command is used for creating any file.
+					   
+
+10. [git diff]:
+------------------
+                   This command is used for show last modified file materials.
+				   
+				   
+11. [rm -rf .git]:
+------------------
+                   This command is used for delete git repository completly.
+				   
+				   
+12. [git log -p]:
+-------------------
+                    This command is used for showing all commit with diff(changable materials in files).
+					
+					
+13. [git log -p -n(Where n=number like 1,2,3...)]:
+-------------------
+                    This command is used for showing all commit with diff(changable materials in files).
+according to define number limit.
+
+
+14. [git log --stat]:
+-------------------
+                    This command is also used for showing all commit with diff(changable information).
+					
+					
+15. [git log --pretty=oneline]:
+--------------------------------
+                                This command is used for showing all commit with only commited message in oneline from line by line.
+
+
+16.[git log --preety=short]:
+-----------------------------
+                             This command is used for showing all commit with only author like perrty and beautifull.
+							 
+							 
+16.[git log --preety=full]:
+-----------------------------
+                             This command is used for showing all commit with author and commitedby(who is commited) like perrty and beautifull.
+							 
+					
+17.[git log --since= n.days]
+-----------------------------
+                            This command is used for showing all commit information according to declared days.(In this command n=any number And week,year and month could be define on the place of days).
+							
+							
+18. [git log --preety=format:"%H --%an"]:
+-----------------------------------------
+                                        This command is used for showing all command according to declared format.
+										
+										
+19. [git commit --amend]:
+---------------------------
+                           This command is used for edit latest commit in my project.
+						   
+						   
+20. [git restore --staged <file-name>]:
+---------------------------------------
+                                      This command is used for making any file in unstaging area.
+									  
+									  
+21. [git checkout <file-name>]:
+-------------------------------
+                               This command is used for unmodifiy any file before unstaging area.
+							   
+							   
+									  
+21. [git checkout -f]:
+-------------------------------
+                               This command is used for unmodifiy one or more modified file at one time.
+							   
+22. [git config --global alias.<your choice command name> <git command>]:
+-------------------------------------------------------------------------
+                                                                         This command is used for making 
+alias command of any existing git command.
+Example: [git config --global alias.st status]
+         [git config --global alias.unstage 'restore --staged --']
+		 [git config --global alias.last 'log -p -1']
+		 
+		 
+23. [git restore <file-name>]:
+-------------------------------
+                              This command is used for discard changes in working directory.
+							  
+							  
+24. [git checkout -b <branch-name>]:
+------------------------------------
+                                    This command is used for make a new branch and switch that branch from another branch.
+									
+			
+25. [git chechout master]:
+--------------------------
+                          This command is used to switch in master branch.
+						  
+						  
+26. [git branch]:
+-----------------
+                 This command is used for showing all branch.
+				 
+				 
+27. [git branch -v]:
+---------------------
+                     This command is used for showing last commit of any branch.
+					 
+					 
+28. [git merge <branch-name>]:
+-------------------------------
+                               This command is used for merge any branch.
+							   
+							   
+29. [git branch -d <branch-name>] AND [git branch -D <branch-name>]:
+---------------------------------------------------------------------
+This command is used delete my branch on locally.
+option (d) will delete branch only if it has already merged and pushed with remote branch.
+ option (D) will delete branch if we want to delete forcefully the branch even if it has not pushed and merged.
+ Now branch is deleted locally.
+							   
+							  
+30. [git push -d origin <branch-name>]:
+---------------------------------------
+                                       This command is used to delete my branch remotelly from github server with all that branch's code
+							   
+							   
+							   
+								Process to push my project on github
+						   ----------------------------------------------
+						   
+=>After Adding in staging area of my project we should run following two commands.
+   1.[git remote]: This command is used to check any remote is added or not.
+   
+   2.[git remote add origin <ssh-url>]
+   Where ssh-url is like git@github.com:Raviyadav1234/practice.git.
+
+=>First of all we should generate ssh key by following command
+   [ssh-keygen -t rsa -b 4096 -C "raviyadv2017sln@gmail.com"]
+   
+=>After that we should run following command 
+   [ eval $(ssh-agent -s)]
+   
+=>After that we shoud run following command
+   [ssh-add ~/.ssh/id_rsa]
+   
+=>After that we shoud run following command
+   [tail ~/.ssh/id_rsa.pub]
+   
+=>After that ssh-key will be generated 
+=>then we should copy the ssh-key and
+=>then we should add the ssh key in my github account.
+
+=>After that we should run following command
+   [git push -u origin master]
+   
+=> And Now my project host on github account
