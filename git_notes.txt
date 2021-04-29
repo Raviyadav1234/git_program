@@ -517,7 +517,7 @@ according to define number limit.
 									  
 21. [git checkout <file-name>]:
 -------------------------------
-                               This command is used for unmodifiy any file before unstaging area.
+                               This command is used for unmodifiy of any modified file before staging area.
 							   
 							   
 									  
