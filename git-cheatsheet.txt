@@ -1,0 +1,14 @@
+-----------Process to host my project on github----------
+----------------------------------------------------------
+
+step1: touch .gitignore
+step2: git config --global user.name "Ravi"
+step3: git config --global user.email "raviyadav2017sln@gmail.com"
+step4: git init
+step5: git add .
+step6: git commit -m "Initial Commit"
+step7: git status # Just to see
+step8: ssh-keygen -t rsa -b 4096 -C "youremail@example.com"
+step9: tail <path to id_rsa.pub> # Add this key to your GitHub account
+step10: git remote add orign <ssh url.git>
+step11: git push origin master
